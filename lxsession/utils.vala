@@ -28,6 +28,65 @@ public struct AppType {
     public string application_type;
 }
 
+public KeyFile load_keyfile_with_overrides (string conf_file) {
+
+    string[] system_config_dirs = Environment.get_system_config_dirs ();
+    string config_system_location = null;
+    string path_system_config_file = null;
+
+    foreach (string config in (system_config_dirs)) {
+        config_system_location = Path.build_filename (config, "lxsession", session_global);
+        message ("Config system location : %s", config_system_location);
+        if (FileUtils.test (config_system_location, FileTest.EXISTS)) {
+            path_system_config_file = Path.build_filename (config_system_location, conf_file);
+            break;
+        }
+    }
+    message ("System system path location : %s", path_system_config_file);
+
+    KeyFile kfg = new KeyFile();
+
+    try {
+        kfg.load_from_file(path_system_config_file, KeyFileFlags.NONE);
+    } catch (KeyFileError err) {
+        warning (err.message);
+    } catch (FileError err) {
+        warning (err.message);
+    }
+
+    string path_user_config_file = Path.build_filename(
+                             Environment.get_user_config_dir (),
+                             "lxsession",
+                             session_global,
+                             conf_file);
+
+    KeyFile kfl = new KeyFile();
+
+    try {
+        kfl.load_from_file(path_user_config_file, KeyFileFlags.NONE);
+    } catch (KeyFileError err) {
+        warning (err.message);
+    } catch (FileError err) {
+        warning (err.message);
+    }
+
+    // override any entries in kfg with entries from kfl...
+    string[] lgroups = kfl.get_groups ();
+    foreach (string group in (lgroups)) {
+        try {
+            string[] lkeys = kfl.get_keys (group);
+            foreach (string key in (lkeys)) {
+                string val = kfl.get_value (group, key);
+                kfg.set_value (group, key, val);
+            }
+        } catch (KeyFileError err) {
+            warning (err.message);
+        }
+    }
+    return kfg;
+}
+
+
 public KeyFile load_keyfile (string config_path) {
 
     KeyFile kf = new KeyFile();

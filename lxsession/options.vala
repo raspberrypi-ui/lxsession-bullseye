@@ -162,7 +162,7 @@ namespace Lxsession
                     break;
                 case "build-in":
                     message("Activate xsettings_manager build-in"); 
-                    settings_daemon_start(load_keyfile (get_config_path ("desktop.conf")));
+                    settings_daemon_start(load_keyfile_with_overrides ("desktop.conf"));
                     break;
                 case "gnome":
                     lxsession_spawn_command_line_async("gnome-settings-daemon");
@@ -184,7 +184,7 @@ namespace Lxsession
             {
                 case "build-in":
                     message("Reload xsettings_manager build-in"); 
-                    settings_daemon_reload(load_keyfile (get_config_path ("desktop.conf")));
+                    settings_daemon_reload(load_keyfile_with_overrides ("desktop.conf"));
                     break;
                 default:
                     message("Reload xsettings_manager default"); 

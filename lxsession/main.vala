@@ -172,7 +172,7 @@ namespace Lxsession {
         }
 
         /* Sync desktop.conf and autostart setting files */
-        global_settings.sync_setting_files ();
+        //global_settings.sync_setting_files ();
 
         /* 
            Check is lxsession is alone

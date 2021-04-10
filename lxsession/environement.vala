@@ -232,7 +232,7 @@ namespace Lxsession
 
             KeyFile env_kf;
 
-            env_kf = load_keyfile (get_config_path ("desktop.conf"));
+            env_kf = load_keyfile_with_overrides ("desktop.conf");
 
             try
             {

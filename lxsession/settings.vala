@@ -663,7 +663,7 @@ public class LxsessionConfigKeyFile: LxsessionConfig
 
     public void read_keyfile()
     {
-        kf = load_keyfile (desktop_config_path);
+        kf = load_keyfile_with_overrides ("desktop.conf");
 
         /* Remove buggy keys */
         if (read_keyfile_string_value(kf, "GTK", "iGtk", "ColorScheme", null) != null)
