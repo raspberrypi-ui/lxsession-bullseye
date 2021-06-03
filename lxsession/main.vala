@@ -72,6 +72,7 @@ namespace Lxsession {
         static bool noxsettings = false;
         static bool autostart = false;
         static string compatibility = "";
+        static string windowman = "";
 
         const OptionEntry[] option_entries = {
         { "session", 's', 0, OptionArg.STRING, ref session, "specify name of the desktop session profile", "NAME" },
@@ -80,6 +81,7 @@ namespace Lxsession {
         { "noxsettings", 'n', 0, OptionArg.NONE, ref noxsettings, "disable Xsettings daemon support", null },
         { "noautostart", 'a', 0, OptionArg.NONE, ref autostart, "autostart applications disable (window-manager mode only)", null },
         { "compatibility", 'c', 0, OptionArg.STRING, ref compatibility, "specify a compatibility mode for settings (only razor-qt supported)", "NAME" },
+        { "wm", 'w', 0, OptionArg.STRING, ref windowman, "specify a window manager to use", "NAME" },
         { null }
         };
 
@@ -221,17 +223,23 @@ namespace Lxsession {
         }
 
         /* Launching windows manager */
-        if (global_settings.get_item_string("Session", "window_manager", null) != null)
+        if (windowman != "")
+        {
+            var windowsmanager = new WindowsManagerApp(windowman);
+            global_windows_manager = windowsmanager;
+            global_windows_manager.launch();
+        }
+        else if (global_settings.get_item_string("Session", "window_manager", null) != null)
         {
             // message("DEBUG1 : %s", global_settings.get_item_string("Session", "window_manager", null));
-            var windowsmanager = new WindowsManagerApp();
+            var windowsmanager = new WindowsManagerApp("");
             global_windows_manager = windowsmanager;
             global_windows_manager.launch();
         }
         else if (global_settings.get_item_string("Session", "windows_manager", "command") != null)
         {
             // message("DEBUG2 : %s", global_settings.get_item_string("Session", "windows_manager", "command"));
-            var windowsmanager = new WindowsManagerApp();
+            var windowsmanager = new WindowsManagerApp("");
             global_windows_manager = windowsmanager;
             global_windows_manager.launch();
         }

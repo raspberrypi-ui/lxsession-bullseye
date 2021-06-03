@@ -833,16 +833,19 @@ namespace Lxsession
         private void WindowsManagerReload()
         {
             message("Reload Windows Manager");
-            if (global_settings.get_item_string("Session", "windows_manager", "command") == null)
+            if (global_windows_manager == null)
             {
-                warning("Windows manager not set");
-            }
-            else if (global_windows_manager == null)
-            {
-                message("Windows manager doesn't exist, creating it");
-                var windowsmanager = new WindowsManagerApp();
-                global_windows_manager = windowsmanager;
-                global_windows_manager.launch();
+                if (global_settings.get_item_string("Session", "windows_manager", "command") == null)
+                {
+                    warning("Windows manager not set");
+                }
+                else
+                {
+                    message("Windows manager doesn't exist, creating it");
+                    var windowsmanager = new WindowsManagerApp("");
+                    global_windows_manager = windowsmanager;
+                    global_windows_manager.launch();
+                }
             }
             else
             {

@@ -211,14 +211,21 @@ public class WindowsManagerApp: SimpleAppObject
     string session;
     string extras;
 
-    public WindowsManagerApp ()
+    public WindowsManagerApp (string arg)
     {
+        wm_command = arg;
         init();
     }
 
     public override void read_settings()
     {
-        if (global_settings.get_item_string("Session", "window_manager", null) != null)
+        if (wm_command != null)
+        {
+            mode = "simple";
+            session = "";
+            extras = "";
+        }
+        else if (global_settings.get_item_string("Session", "window_manager", null) != null)
         {
             mode = "simple";
             wm_command = global_settings.get_item_string("Session", "window_manager", null);
