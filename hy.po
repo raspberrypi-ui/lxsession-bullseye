@@ -1,0 +1,776 @@
+# Hungarian translation of lxsession.
+# Copyright (C) 2006-2010 The LXDE Team
+# This file is distributed under the same license as the lxsession package.
+# Attila Szervac <sas@321.hu>, 2006-2008.
+# Laszlo Dvornik <dvornik@gnome.hu>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: lxsession\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-10-11 15:47+0300\n"
+"PO-Revision-Date: 2015-05-04 19:58+0000\n"
+"Last-Translator: Avag Sayan <info@armath.am>\n"
+"Language-Team: Armenian(hy)\n"
+"Language: templates\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.7\n"
+"X-POOTLE-MTIME: 1439775037.646574\n"
+
+#: ../lxsession-logout/lxsession-logout.c:48
+msgid "Custom message to show on the dialog"
+msgstr "Զրուցարանում ցուցադրվող հաղորդագրություն"
+
+#: ../lxsession-logout/lxsession-logout.c:48
+msgid "message"
+msgstr "հաղորդագրություն"
+
+#: ../lxsession-logout/lxsession-logout.c:49
+msgid "Banner to show on the dialog"
+msgstr "Զրուցարանում ցուցադրվող պաստառ"
+
+#: ../lxsession-logout/lxsession-logout.c:49
+msgid "image file"
+msgstr "պատկերի նիշք"
+
+#: ../lxsession-logout/lxsession-logout.c:50
+msgid "Position of the banner"
+msgstr "Պաստառի դիրքը"
+
+#: ../lxsession-logout/lxsession-logout.c:460
+#, c-format
+msgid "Error: %s\n"
+msgstr "Սխալ՝ %s\n"
+
+#: ../lxsession-logout/lxsession-logout.c:694
+#, c-format
+#, c-format, c-format
+msgid "<b><big>Logout %s %s session ?</big></b>"
+msgstr "<b><big>Դուրս գա՞լ a(z) %s %s սեսիայից</big></b>"
+
+#: ../lxsession-logout/lxsession-logout.c:702
+msgid "Sh_utdown"
+msgstr "_Անջատել"
+
+#: ../lxsession-logout/lxsession-logout.c:713
+msgid "_Reboot"
+msgstr "Վերագործարկել"
+
+#: ../lxsession-logout/lxsession-logout.c:724
+msgid "_Suspend"
+msgstr "_Կասեցնել"
+
+#: ../lxsession-logout/lxsession-logout.c:735
+msgid "_Hibernate"
+msgstr "_Քնեցնել"
+
+#: ../lxsession-logout/lxsession-logout.c:746
+msgid "S_witch User"
+msgstr "Փոխարկել օգտատիրոջը"
+
+#: ../lxsession-logout/lxsession-logout.c:757
+msgid "L_ock Screen"
+msgstr "Կողպել էկրանը"
+
+#. Create the Logout button.
+#: ../lxsession-logout/lxsession-logout.c:766
+msgid "_Logout"
+msgstr "_Ելք"
+
+#: ../lxsession-edit/lxsession-edit-common.c:385
+msgid "Enabled"
+msgstr "Միացված"
+
+#: ../lxsession-edit/lxsession-edit-common.c:390
+msgid "Application"
+msgstr "Հավելված"
+
+#: ../lxpolkit/lxpolkit.c:43
+msgid "Error"
+msgstr "Սխալ"
+
+#: ../lxpolkit/lxpolkit.c:46
+msgid "Information"
+msgstr "Տվյալներ"
+
+#: ../lxpolkit/lxpolkit-listener.c:88
+msgid ""
+"Authentication failed!\n"
+"Wrong password?"
+msgstr ""
+"Նույնականացումը ձախողվեց!\n"
+"Գաղտնաբառը սխա՞լ է"
+
+#: ../lxpolkit/lxpolkit-listener.c:106
+msgid "Password: "
+msgstr "Գաղտնաբառ՝ "
+
+#: ../lxpolkit/lxpolkit-listener.c:251
+#, c-format
+#, c-format, c-format
+msgid "Group: %s"
+msgstr "Խումբ՝ %s"
+
+#: ../data/ui/lxsession-edit.ui.h:1 ../data/lxsession-edit.desktop.in.h:1
+msgid "Desktop Session Settings"
+msgstr "Աշխատասեղանի սեսիայի կարգավորումներ"
+
+#: ../data/ui/lxsession-edit.ui.h:2
+msgid "Applications automatically started after entering desktop:"
+msgstr "Հավելվածների ինքնաբերաբար մեկնարկ աշխատասեղան մուտք գործելուց հետո"
+
+#: ../data/ui/lxsession-edit.ui.h:3
+msgid "Automatically Started Applications"
+msgstr "Ինքնաբերաբար հավելվածների մեկնարկ"
+
+#: ../data/ui/lxsession-edit.ui.h:4
+msgid "Window Manager:"
+msgstr "Պատուհանի կառավարիչ՝"
+
+#: ../data/ui/lxsession-edit.ui.h:5
+msgid ""
+"Command line used to launch window manager\n"
+"(The default window manager command for LXDE should be openbox-lxde)"
+msgstr "Հրամանների վահանակն օգտագործվում է պատուհանի կառավարիչն գործարկելու համար"
+"(պատուհանի լռելայն հրամանը LXDE-ի համար պետք է լինի openbox-lxde-ն)"
+
+#: ../data/ui/lxsession-edit.ui.h:7
+msgid ""
+"<b>Warning:</b> Do <b>NOT</b> touch this unless you know exactly what you "
+"are doing.\n"
+"\n"
+"<b>NOTE:</b> This setting will take effect on next login."
+msgstr "<b>Զգուշացում:</b> Do <b>Մի</b> ձեռք տվեք սրան, եթե հստակ չգիտեք, թե ինչ"
+"եք անում։\n"
+"\n"
+"<b>Նշում՝</b> Այս կարգավորումը սահմանված կլինի հաջորդ մուտք գործելուց"
+
+#: ../data/ui/lxsession-edit.ui.h:10
+msgid "Advanced Options"
+msgstr "Speciális beállítások"
+
+#: ../data/ui/lxpolkit.ui.h:1
+msgid "Authentication"
+msgstr "Hitelesítés"
+
+#: ../data/ui/lxpolkit.ui.h:2
+msgid "Identity:"
+msgstr "Azonosító:"
+
+#: ../data/ui/lxsession-default-apps.ui.h:1
+msgid "File Manager"
+msgstr "Նիշային կառավարիչ"
+
+#: ../data/ui/lxsession-default-apps.ui.h:2
+msgid "Reload"
+msgstr "Նորից բեռնում"
+
+#: ../data/ui/lxsession-default-apps.ui.h:3
+msgid "More"
+msgstr "Ավելին"
+
+#: ../data/ui/lxsession-default-apps.ui.h:4
+msgid "Terminal manager"
+msgstr "Վահանակի կառավարիչ"
+
+#: ../data/ui/lxsession-default-apps.ui.h:5
+msgid "Webbrowser"
+msgstr "Վեբ Զննարկիչ"
+
+#: ../data/ui/lxsession-default-apps.ui.h:6
+msgid "Email"
+msgstr "Էլ-փոստ"
+
+#: ../data/ui/lxsession-default-apps.ui.h:7
+msgid "Communication 1"
+msgstr "Հաղորդակցություն 1"
+
+#: ../data/ui/lxsession-default-apps.ui.h:8
+msgid "Communication 2"
+msgstr "Հաղորդակցություն 2"
+
+#: ../data/ui/lxsession-default-apps.ui.h:9
+msgid "Widget 1"
+msgstr "Վիջեթ 1"
+
+#: ../data/ui/lxsession-default-apps.ui.h:10
+msgid "Launcher manager"
+msgstr "Գործարկման կառավարիչ"
+
+#: ../data/ui/lxsession-default-apps.ui.h:11
+msgid "Screenshot manager"
+msgstr "Էկրանի պատկերի հատման կառավարիչ "
+
+#: ../data/ui/lxsession-default-apps.ui.h:12
+msgid "PDF Reader"
+msgstr "PDF գիրք"
+
+#: ../data/ui/lxsession-default-apps.ui.h:13
+msgid "Video player"
+msgstr "Տեսանվագարկիչ"
+
+#: ../data/ui/lxsession-default-apps.ui.h:14
+msgid "Audio player"
+msgstr "Ձայնանվագարկիչ"
+
+#: ../data/ui/lxsession-default-apps.ui.h:15
+msgid "Image viewer"
+msgstr "Նկարի զննարկիչ"
+
+#: ../data/ui/lxsession-default-apps.ui.h:16
+msgid "Text editor"
+msgstr "Տեքստի խմբագիր"
+
+#: ../data/ui/lxsession-default-apps.ui.h:17
+msgid "Archive"
+msgstr "Արխիվ"
+
+#: ../data/ui/lxsession-default-apps.ui.h:18
+msgid "Charmap"
+msgstr "Նիշային աղյուսակ"
+
+#: ../data/ui/lxsession-default-apps.ui.h:19
+msgid "Calculator"
+msgstr "Հաշվիչ"
+
+#: ../data/ui/lxsession-default-apps.ui.h:20
+msgid "Spreadsheet"
+msgstr "Աղյուսակ"
+
+#: ../data/ui/lxsession-default-apps.ui.h:21
+msgid "Bittorent"
+msgstr "Բիտորենտ"
+
+#: ../data/ui/lxsession-default-apps.ui.h:22
+msgid "Document"
+msgstr "Dokumentum"
+
+#: ../data/ui/lxsession-default-apps.ui.h:23
+msgid "Webcam"
+msgstr "Վեբ տեսախցիկ"
+
+#: ../data/ui/lxsession-default-apps.ui.h:24
+msgid "Burning utility"
+msgstr "Գրառելու պիտույք"
+
+#: ../data/ui/lxsession-default-apps.ui.h:25
+msgid "Notes utility"
+msgstr "Նշումների պիտույք"
+
+#: ../data/ui/lxsession-default-apps.ui.h:26
+msgid "Disks utility"
+msgstr "Սկավառակի պիտույք"
+
+#: ../data/ui/lxsession-default-apps.ui.h:27
+msgid "Tasks monitor"
+msgstr "Ծրագրաշարերի վերահսկիչ"
+
+#: ../data/ui/lxsession-default-apps.ui.h:28
+msgid "Launching applications"
+msgstr "Ծրագրերի գործարկում"
+
+#: ../data/ui/lxsession-default-apps.ui.h:29
+msgid "Windows Manager"
+msgstr "Պատուհանի կառավարիչ"
+
+#: ../data/ui/lxsession-default-apps.ui.h:30
+msgid "Panel"
+msgstr "Կառավարակետ"
+
+#: ../data/ui/lxsession-default-apps.ui.h:31
+msgid "Dock"
+msgstr "Մատույց"
+
+#: ../data/ui/lxsession-default-apps.ui.h:32
+msgid "Composite Manager"
+msgstr "Կոմպոզիտային կառավարիչ"
+
+#: ../data/ui/lxsession-default-apps.ui.h:33
+msgid "Desktop Manager"
+msgstr "Աշխատասեղանի կառավարիչ"
+
+#: ../data/ui/lxsession-default-apps.ui.h:34
+msgid "Screensaver"
+msgstr "Էկրանի պատկերի պահպանում"
+
+#: ../data/ui/lxsession-default-apps.ui.h:35
+msgid "Power Manager"
+msgstr "Հոսանքի կառավարիչ"
+
+#: ../data/ui/lxsession-default-apps.ui.h:36
+msgid "Polkit agent"
+msgstr ""
+
+#: ../data/ui/lxsession-default-apps.ui.h:37
+msgid "Network GUI"
+msgstr "Ցանցի միջերես"
+
+#: ../data/ui/lxsession-default-apps.ui.h:38
+msgid "Lock screen manager"
+msgstr "Էկրանի կողպման կառավարիչ"
+
+#: ../data/ui/lxsession-default-apps.ui.h:39
+msgid "Audio manager"
+msgstr "Ձայնի կառավարիչ"
+
+#: ../data/ui/lxsession-default-apps.ui.h:40
+msgid "Workspace manager"
+msgstr "Աշխատանքային միջավայրի կառավարիչ"
+
+#: ../data/ui/lxsession-default-apps.ui.h:41
+msgid "Quit manager"
+msgstr "Ելքի կառավարիչ"
+
+#: ../data/ui/lxsession-default-apps.ui.h:42
+msgid "Upgrade manager"
+msgstr "Վերազինման կառավարիչ"
+
+#: ../data/ui/lxsession-default-apps.ui.h:43
+msgid "Clipboard manager"
+msgstr "Պատճենավորման կառավարիչ"
+
+#: ../data/ui/lxsession-default-apps.ui.h:44
+msgid "Security (keyring)"
+msgstr "Անվտանգություն"
+
+#: ../data/ui/lxsession-default-apps.ui.h:45
+msgid "A11y"
+msgstr "A11y"
+
+#: ../data/ui/lxsession-default-apps.ui.h:46
+msgid "Proxy"
+msgstr "Պրոքսի"
+
+#: ../data/ui/lxsession-default-apps.ui.h:47
+msgid "Xrandr"
+msgstr "Xrandr"
+
+#: ../data/ui/lxsession-default-apps.ui.h:48
+msgid "Core applications"
+msgstr "Հիմնական հավելվածներ"
+
+#: ../data/ui/lxsession-default-apps.ui.h:49
+msgid "Disable autostarted applications ?"
+msgstr "Անջատե՞լ մեկնարկային հավելվածները"
+
+#: ../data/ui/lxsession-default-apps.ui.h:50
+msgid "<b>Settings</b>"
+msgstr "<b>Կարգավորումներ</b>"
+
+#: ../data/ui/lxsession-default-apps.ui.h:51
+msgid "<b>Manual autostarted applications</b>"
+msgstr "<b>Ձեռքով մեկնարկած հավելվածներ</b>"
+
+#: ../data/ui/lxsession-default-apps.ui.h:52
+msgid "<b>Known Applications </b>"
+msgstr ""<b>Հայտնի հավելվածներ</b>"
+
+#: ../data/ui/lxsession-default-apps.ui.h:53
+msgid "Autostart"
+msgstr "Ինքամեկնարկ"
+
+#: ../data/ui/lxsession-default-apps.ui.h:54
+msgid "Laptop mode"
+msgstr "Նոթբուքի ռեժիմ"
+
+#: ../data/ui/lxsession-default-apps.ui.h:55
+msgid "<b>General settings</b>"
+msgstr "<b>Գլխավոր կարգավորումներ</b>"
+
+#: ../data/ui/lxsession-default-apps.ui.h:56
+msgid "<b>Dbus</b>"
+msgstr "<b>Dbus</b>"
+
+#: ../data/ui/lxsession-default-apps.ui.h:57
+msgid "Type"
+msgstr "Տիպ"
+
+#: ../data/ui/lxsession-default-apps.ui.h:58
+msgid "Menu prefix"
+msgstr "Ընտրացանկի նախածանց"
+
+#: ../data/ui/lxsession-default-apps.ui.h:59
+#: ../lxsession-default-apps/combobox.vala:168
+#: ../lxsession-default-apps/combobox.vala:284
+msgid "Apply"
+msgstr "Հաստատել"
+
+#: ../data/ui/lxsession-default-apps.ui.h:60
+msgid "<b>Environment</b>"
+msgstr "<b>Միջավայր</b>"
+
+#: ../data/ui/lxsession-default-apps.ui.h:61
+#, fuzzy
+msgid "Mode"
+msgstr "Ռեժիմ"
+
+#: ../data/ui/lxsession-default-apps.ui.h:62
+#, fuzzy
+msgid "Model"
+msgstr "Մոդել"
+
+#: ../data/ui/lxsession-default-apps.ui.h:63
+msgid "Layout"
+msgstr "Դասավորություն"
+
+#: ../data/ui/lxsession-default-apps.ui.h:64
+msgid "Variant"
+msgstr "Տարբերակ"
+
+#: ../data/ui/lxsession-default-apps.ui.h:65
+msgid "Options"
+msgstr "Ընտրանքներ"
+
+#: ../data/ui/lxsession-default-apps.ui.h:66
+msgid "<b>Keymap</b>"
+msgstr "<b>Ստեղների համակարգ</b>"
+
+#: ../data/ui/lxsession-default-apps.ui.h:67
+msgid "Settings"
+msgstr "Կարգավորումներ"
+
+#: ../data/lxsession-edit.desktop.in.h:2
+msgid "Manage applications loaded in desktop session"
+msgstr "Կառավարվող ծրագրերը բեռնված են աշխատասեղանի սեսիայում"
+
+#: ../data/lxsession-default-apps.desktop.in.h:1
+msgid "Default applications for LXSession"
+msgstr "Լռելայն ծրագրեր LXSession֊ի համար"
+
+#: ../data/lxsession-default-apps.desktop.in.h:2
+msgid "Change the default applications on LXDE"
+msgstr "Փոխել լռելայն հավելվածը LXDE֊ի համար"
+
+#: ../data/lxpolkit.desktop.in.h:1
+msgid "LXPolKit"
+msgstr "LXPolKit"
+
+#: ../data/lxpolkit.desktop.in.h:2
+msgid "Policykit Authentication Agent"
+msgstr "Policykit նույնականացման գործիք"
+
+#: ../lxsession-default-apps/main.vala:29
+msgid "Update lxsession database"
+msgstr "Թարմացնել lxsession֊ի տվյալների շտեմարանը"
+
+#. Widget content:
+#: ../lxsession-default-apps/main.vala:42
+msgid "The database is updating, please wait"
+msgstr "Տվյալների շտեմարանը թարմանում է, խնդրում ենք սպասել"
+
+#: ../lxsession-default-apps/main.vala:91
+msgid "LXSession configuration"
+msgstr "LXSession֊ի կարգաբերում"
+
+#. Common string
+#: ../lxsession-default-apps/main.vala:143
+msgid ""
+"Manual Settings: Manually sets the command (you need to restart lxsession-"
+"default-apps to see the change)\n"
+msgstr "Ձեռքով կարգավորումներ՝ սահմանել հրամանը (դուք պետք է վերագործարկեք)"
+"լռելայն հավելվածները փոփոխությունները տեսնելու համար)\n"
+
+#: ../lxsession-default-apps/main.vala:144
+msgid "Session : specify the session\n"
+msgstr "Սեսիա։ Ընտրել սեսիան"
+
+#: ../lxsession-default-apps/main.vala:145
+msgid "Extra: Add an extra parameter to the launch option\n"
+msgstr "Լրացուցիչ։ Ավելացնել լրացուցիչ հատկություն գործարկման ընտրանքի համար"
+
+#: ../lxsession-default-apps/main.vala:146
+msgid ""
+"Mime association: Automatically associates mime types to this application ?\n"
+msgstr "Հիշողության զուգորդում։ Զուգորդե՞լ հիշողության տիպերը այս ծրագրի համար։"
+
+#: ../lxsession-default-apps/main.vala:147
+msgid ""
+"Available applications : Applications of this type available on your "
+"repositories\n"
+msgstr "Հասանելի հավելվածներ։ Այս տիպի հավելվածների պահոցները հասանելի են"
+
+#: ../lxsession-default-apps/main.vala:148
+msgid "Handle Desktop: Draw the desktop using the file manager ?\n"
+msgstr "Կառավարել Աշխատասեղանը։ Գծագրել աշխատասեղանը օգտագործելով նիշային կառավարիչը"
+
+#: ../lxsession-default-apps/main.vala:149
+msgid "Autostart the application ?\n"
+msgstr "Ինքնաբերաբար մեկնարկե՞լ ծրագիրը"
+
+#: ../lxsession-default-apps/main.vala:150
+msgid ""
+"Set default program for Debian system (using update-alternatives, need root "
+"password)\n"
+msgstr "Սահմանել լռելայն ծրագիրը Դեբիան համակարգի համար(օգտագործելով update-alternatives"
+"անհրաժեշտ է root գաղտնաբառ)\n"
+
+#. New inits
+#: ../lxsession-default-apps/main.vala:153
+msgid ""
+"Windows manager draws and manage the windows. \n"
+"You can choose openbox, openbox-custom (for a custom openbox configuration, "
+"see \"More\"), kwin, compiz ..."
+msgstr ""
+"Պատուհանի կառավարչի օգնությամբ կարող եք գծագրել և կառավարել պատուհանները. \n"
+"Կարող եք ընտրել openbox, openbox-custom (հատուկ openbox կարգաբերման համար, "
+"կարող եք \"տեսնել ավելին\"), kwin, compiz ..."
+
+#: ../lxsession-default-apps/main.vala:158
+msgid ""
+"Panel is the component usually at the bottom of the screen which manages a "
+"list of opened windows, shortcuts, notification area ..."
+msgstr ""
+"Կառավարակետը էկիանի ներքի հատվածի բաղադրիչն է, որը կառավարում է "
+"բացվող պատուհանները, դյուրանցումներն ու ծանուցումների մասերը..."
+
+#: ../lxsession-default-apps/main.vala:163
+msgid ""
+"Dock is a second panel. It's used to launch a different program to handle a "
+"second type of panel."
+msgstr ""
+"Մատույցը երկրորդ կառավարակետն է. Այն օգտագործվում է գործարկելու տարբեր ծրագրեր "
+"որպես երկրորդ տեսակի հրամանների աշխատեցման կետ"
+
+#: ../lxsession-default-apps/main.vala:168
+msgid ""
+"File manager is the component which open the files.\n"
+"See \"More\" to add options to handle the desktop, or opening files "
+msgstr ""
+"FՆիշային կառավարիչը նիշք բացելու բաղադրիչներից է։\n"
+"Տես \"ավելին\" աշխատասեղանը կարգավորելու տարբերակներ ավելացնելու կամ նիշքեր բացելու համար "
+
+#: ../lxsession-default-apps/main.vala:173
+msgid ""
+"Composite manager enables graphics effects, like transpacency and shadows, "
+"if the windows manager doesn't handle it. \n"
+"Example: compton"
+msgstr ""
+"Կոմպոզիտային կառավարիչը թույլատրում է գրաֆիկ էֆեկտները, ինչպիսին է թափանցիկությունն ու ստվերները, "
+"եթե պատուհանի կառավարիչը չի կարողանում այն իրականացնել։ \n"
+"Օրինակ՝ compton"
+
+#: ../lxsession-default-apps/main.vala:178
+msgid ""
+"Desktop manager draws the desktop and manages the icons inside it.\n"
+"You can manage it with the file manager by setting \"filemanager\""
+msgstr ""
+"Աշխատասեղանի կառավարիչը գծագրում և կառավարում է դրա ներսում առկա մանրապետկերներն ու միջավայրը.\n"
+"Դուք կարող եք կառավարել այն նիշային կառավարչի կարգավորման օգնությամբ \"filemanager\""
+
+#: ../lxsession-default-apps/main.vala:180
+msgid "Wallpaper: Set an image path to draw the wallpaper"
+msgstr "Աշխատասեղանի պատկեր։ Սահմանել պատկերի նիշքի վայրը"
+
+#: ../lxsession-default-apps/main.vala:183
+msgid ""
+"Screensaver is a program which displays animations when your computer is idle"
+msgstr ""
+"Էկրանի տեսքի պահպանող գործիքը ծրագիր է, որը ցուցադրում է անիմացիաներ, երբ ձեր համակարգիչը գտնվում է պարապ ռեժիմում"
+
+
+#: ../lxsession-default-apps/main.vala:188
+msgid ""
+"Power Manager helps you to reduce the usage of batteries. You probably don't "
+"need one if you have a desktop computer.\n"
+"Auto option will set it automatically, depending of the laptop mode option."
+msgstr ""
+
+#: ../lxsession-default-apps/main.vala:193
+msgid ""
+"Polkit agent provides authorisations to use some actions, like suspend, "
+"hibernate, using Consolekit ... It's not advised to make it blank."
+msgstr ""
+
+#: ../lxsession-default-apps/main.vala:198
+msgid "Set an utility to manager connections, such as nm-applet"
+msgstr "Սահմանել կառավարչին կապակցման համար գործիքը, ինչպիսին է nm-applet֊ը"
+
+#: ../lxsession-default-apps/main.vala:203
+msgid "Use a communication software (an IRC client, an IM client ...)"
+msgstr "Օգտագործել հաղորդակցման ծրագիր(IRC client, an IM client ...)" 
+
+#: ../lxsession-default-apps/main.vala:208
+msgid "Use another communication software (an IRC client, an IM client ...)"
+msgstr "Օգտագործել այլ հաղորդակցման ծրագիր(IRC client, an IM client ...)""
+
+#: ../lxsession-default-apps/main.vala:213
+msgid "Terminal by default to launch command line."
+msgstr "Վահանակ, որը լռելայն գործարկվում է հրամանաշարի կողմից "
+
+#: ../lxsession-default-apps/main.vala:218
+msgid "Application to go to Internet, Google, Facebook, debian.org ..."
+msgstr "Ծրագիր համացանց մուտք գործելու համար` Internet, Google, Facebook, debian.org..."
+
+#: ../lxsession-default-apps/main.vala:223
+msgid "Application to send mails"
+msgstr "Ծրագիր նամակ ուղարկելու համար"
+
+#: ../lxsession-default-apps/main.vala:228
+msgid "Utility to launch gadgets, like conky, screenlets ..."
+msgstr "Պիտույք գադջեթներ գործարկելու համար, ինչպիսին է conky, screenlets֊ը..."
+
+#: ../lxsession-default-apps/main.vala:233
+msgid ""
+"Utility to launch application, like synapse, kupfer ... \n"
+"For using lxpanel or lxde default utility, use \"lxpanelctl\" "
+msgstr ""
+"Ծրագրեր գործարկելու պիտույք, ինչպիսին է synapse, kupfer ... \n"
+"lxpanel կամ lxde գործարկելու համար օգտագործել \"lxpanelctl\" "
+
+#: ../lxsession-default-apps/main.vala:238
+msgid "Application for taking screeshot of your desktop, like scrot ..."
+msgstr "Աշխատասեղանի տեսքը պահելու ծրագիր, ինչպիսին է scrot-ը"
+
+#: ../lxsession-default-apps/main.vala:248
+msgid "Video application"
+msgstr "Տեսածրագրեր"
+
+#: ../lxsession-default-apps/main.vala:253
+msgid "Audio application"
+msgstr "Ձայնային ծրագրեր"
+
+#: ../lxsession-default-apps/main.vala:258
+msgid "Application to display images"
+msgstr "Պատկերներ ցուցադրելու ծրագիր"
+
+#: ../lxsession-default-apps/main.vala:263
+msgid "Application to edit text"
+msgstr "Տեքստ խմբագրելու ծրագիր"
+
+#: ../lxsession-default-apps/main.vala:268
+msgid "Application to create archives, like file-roller"
+msgstr "Արխիվ բացելու ծրագիր, ինչպիսին է file-roller֊ը"
+
+#: ../lxsession-default-apps/main.vala:273
+msgid "Charmap application"
+msgstr "Նիշային համակարգի ծրագիր"
+
+#: ../lxsession-default-apps/main.vala:278
+msgid "Calculator application"
+msgstr "Հաշվիչի ծրագիր"
+
+#: ../lxsession-default-apps/main.vala:283
+msgid "Application to create spreedsheet, like gnumeric"
+msgstr "Աղյուսակ ստեղծելու ծրագիր, ինչպիսին է gnumeric֊ը"
+
+#: ../lxsession-default-apps/main.vala:288
+msgid "Application to manage bittorent, like transmission"
+msgstr "Բիտորենտը կառավարելու ծրագիր, ինչպիսին է transmission֊ը"
+
+#: ../lxsession-default-apps/main.vala:293
+msgid "Application to manage office text, like abiword"
+msgstr "Գրասենյակային տեքստերը խմբագրելու ծրագիր, ինչպիսին է abiword֊ը"
+
+#: ../lxsession-default-apps/main.vala:298
+msgid "Application to manage webcam"
+msgstr "ՎԵԲ տեսախցիկը կառավարելու ծրագիր"
+
+#: ../lxsession-default-apps/main.vala:303
+msgid "Application to manage burning CD/DVD utilty "
+msgstr "CD/DVD գրառելու ծրագիր/պիտույք"
+
+#: ../lxsession-default-apps/main.vala:308
+msgid "Application to manage notes utility"
+msgstr "Նշումները կառավարելու ծրագիր"
+
+#: ../lxsession-default-apps/main.vala:313
+msgid "Application to manage disks"
+msgstr "Սկավառակ կառավարելու ծրագիր"
+
+#: ../lxsession-default-apps/main.vala:318
+msgid "Application to monitor tasks running on your system"
+msgstr "Համակարգի պրոցեսների կառավարման ծրագիր"
+
+#: ../lxsession-default-apps/main.vala:323
+msgid "Application to lock your screen"
+msgstr "Ծրագիր էկրանը կառավարելու համար"
+
+#: ../lxsession-default-apps/main.vala:328
+msgid "Managing your audio configuration"
+msgstr "Ձայնային կարգաբերման կառավարիչ"
+
+#: ../lxsession-default-apps/main.vala:333
+msgid "Managing your workspace configuration"
+msgstr "Աշխատանքային միջավայրի կարգաբերման կառավարիչ"
+
+#: ../lxsession-default-apps/main.vala:338
+msgid "Managing the application to quit your session"
+msgstr "Սեսիայի փակման ծրագիր"
+
+#: ../lxsession-default-apps/main.vala:343
+msgid "Managing the application to update and upgrade your system"
+msgstr "Համակարգի թարմացման և վերազինման կառավարման ծրագիր"
+
+#: ../lxsession-default-apps/main.vala:348
+msgid "Managing clipboard support"
+msgstr "Պատճենումների աջակցման կառավարիչ"
+
+#: ../lxsession-default-apps/main.vala:353
+msgid ""
+"Managing keyring support.\n"
+"Standard options available \"gnome\" for gnome-keyring support  or \"ssh-"
+"agent\" for ssh-agent support"
+msgstr ""
+"Ստեղների աջակցման կառավարում։\n"
+"Ստանդարտ հասանելի ընտրանք \"gnome\" gnome-keyring աջակցման համար \"ssh-"
+"գործիք\" ssh-agent աջակցման համար"
+
+#: ../lxsession-default-apps/main.vala:358
+msgid ""
+"Managing support for accessibility.\n"
+"Stardart option are gnome, for stardart gnome support."
+msgstr ""
+"Մատչելիության աջակցության կառավարում։\n"
+"Ստանդարտ ընտրանքը gnome֊ն է։"
+
+#: ../lxsession-default-apps/main.vala:363
+msgid "Managing proxy support"
+msgstr "Պրոքսի աջակցության կառավարում"
+
+#: ../lxsession-default-apps/main.vala:368
+msgid "Managing XRandr parameters. Use a command like xrandr --something"
+msgstr "XRandr հատկության կառավարու։ Օգտագործել xrandr֊ի ինչ որ հրամանաշար"
+
+#: ../lxsession-default-apps/combobox.vala:145
+msgid "Manual setting"
+msgstr "Ձեռքի կարգավորումներ"
+
+#: ../lxsession-default-apps/combobox.vala:165
+msgid "Mime Association"
+msgstr "Հիշելու զուգորդում"
+
+#: ../lxsession-default-apps/combobox.vala:194
+msgid "Available applications"
+msgstr "Հասանելի ծրագրերը"
+
+#: ../lxsession-default-apps/combobox.vala:240
+msgid "Autostart the application ?"
+msgstr "Իքնամեկնարկե՞լ ծրագիրը"
+
+#: ../lxsession-default-apps/combobox.vala:261
+msgid "Handle the desktop with it ?"
+msgstr "Կառավարե՞լ աշխատասեղանը սրանով"
+
+#: ../lxsession-default-apps/combobox.vala:281
+msgid "Set debian default programs"
+msgstr "Սահմանել դեբիանի լռելայն ծրագրերը"
+
+#: ../lxsession-default-apps/combobox.vala:425
+msgid "Disable"
+msgstr "Անջատել"
+
+#: ../lxsession-default-apps/combobox.vala:564
+msgid "Do you want to associate the following Mimetype ?\n"
+msgstr "Ցանկանո՞ւմ եք զուգորդել հետևյալ հիշողության տիպը"
+
+#: ../lxsession-default-apps/combobox.vala:612
+msgid "Cancel"
+msgstr "Չեղարկել"
+
+#~ msgid "LXSession is not running."
+#~ msgstr "XSession չի գործարկվում"
+
+#~ msgid "Logout"
+#~ msgstr "Դուրս գալ"
