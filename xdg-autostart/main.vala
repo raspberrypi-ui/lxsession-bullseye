@@ -44,7 +44,7 @@ namespace Lxsession
 
             if (desktop_environnement == null)
             {
-                if (GLib.Environment.get_variable ("WAYLAND_DISPLAY") != "")
+                if (GLib.Environment.get_variable ("WAYFIRE_CONFIG_FILE") != "")
                     xdg_autostart("wayfire");
                 else
                     xdg_autostart("LXDE");
