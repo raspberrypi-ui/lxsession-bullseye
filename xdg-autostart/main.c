@@ -137,9 +137,9 @@ lxsession_main_main (gchar** args,
 	_tmp8_ = lxsession_main_desktop_environnement;
 	if (_tmp8_ == NULL) {
 		const gchar* _tmp9_;
-		_tmp9_ = g_getenv ("WAYFIRE_CONFIG_FILE");
-		if (g_strcmp0 (_tmp9_, "") != 0) {
-			xdg_autostart ("wayfire");
+		_tmp9_ = g_getenv ("WAYLAND_DISPLAY");
+		if (_tmp9_ != NULL) {
+			xdg_autostart ("LXDE-wayland");
 		} else {
 			xdg_autostart ("LXDE");
 		}
